@@ -1,16 +1,18 @@
 #include <stdio.h>
 int main() {
-        int n = 0;
-        int sum = 0;
+  int n = 1;
+  int sum;
+  float avr;
+  while(n>0){
         printf("enter a number : ");
         scanf("%d",&n);
-        while (n > 0) {
-        printf("enter a number : ");
-        sum+=n;
-        scanf("%d",&n);
-        sum++;
+        avr++;
+        if(n>0) {
+        sum += n;
         }
-        printf("summation = %d\n",sum);
-        printf("average = %d\n",sum/n);
-        return 0;
+  }
+  float a = (float)sum/avr;
+  printf("sum = %d\n", sum);
+  printf("average = %f\n" , a);
+  return 0;
 }
